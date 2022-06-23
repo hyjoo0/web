@@ -27,7 +27,7 @@
         </div>
 
         <hr/>
-        <form action="/reply/create/{{ post.id }}" method="post">
+        <form action="/reply/create/{{ post.id }}" method="post"> # id 가져옴
             {% csrf_token %}
             <div class="row">
                 <div class="col-md-10 form-group">
