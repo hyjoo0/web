@@ -128,3 +128,13 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = 'ckzkguswn2@gmail.com'
+EMAIL_PROT = ''
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = '앱비밀번호'
+EMAIL_USER_TLS = True
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 1
+ACCOUNT_EMAIL_SUBJECT_PREFIX = '[이메일인증]'
